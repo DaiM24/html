@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+     <!-- Instalación de la familia tipográfica usando G Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <section id="contacto">
+        <form id="form_contacto" action="" method="POST" enctype="multipart/form-data">
+            <label>
+                Nombre
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" >
+            </label>
+            <br>
+            <label>
+                Apellido
+                <input type="text" name="apellido" placeholder="Ingrese su apellido" >
+            </label>
+            <br>
+            <label>
+                Email
+                <input type="email" required>
+            </label>
+            <br>
+            <label>Ingrese su mensaje:<br>
+           <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+            </label>
+           <br>
+            <label >
+                ¿Desea recibir novedades por email?
+                <input class="radio" type="radio" name="newsletter" value="Si" checked="checked">Si
+                <input class="radio" type="radio" name="newsletter" value="No" checked="checked">No
+            </label>
+            <br>  <br>  <br>  <br>
+            <label>
+                Aceptar los terminos y condiciones:
+                <input class="check" type="checkbox" name="terminos" value="acepta" required> Si
+            </label>
+            <br>
+            <input class="submit" type="submit" value="Ingresar" name="submit">
+            
+        </form>
+    </section>
+</body>
+</html>
